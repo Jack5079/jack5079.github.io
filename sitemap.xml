@@ -4,7 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 
 <url>
@@ -25,37 +25,37 @@
 <url>
   <loc>https://jack5079.github.io/rectangle</loc>
   <lastmod>2018-12-01T18:01:39+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/face</loc>
   <lastmod>2018-12-01T18:01:39+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/logo</loc>
   <lastmod>2018-12-01T18:01:39+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/boxes</loc>
   <lastmod>2018-12-01T18:01:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/stick</loc>
   <lastmod>2018-12-01T18:01:39+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/intro</loc>
   <lastmod>2018-12-01T18:01:39+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://jack5079.github.io/ball</loc>
   <lastmod>2018-12-01T18:01:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 
 
