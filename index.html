@@ -18,6 +18,23 @@
 		<meta property="og:image" content="https://jack5079.github.io/images/icon.png" />
 		<meta property="og:description" content="Jack5079's Website" />
 		<meta name="theme-color" content="#121317">
+		<style>
+		.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -66,7 +83,7 @@
 						<!-- The video thing -->
 							<article id="video">
 								<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-								<iframe id="youtube_video" width="600" height="340" frameborder="0" modestbranding="1" allowfullscreen></iframe>
+								<div class="video-container"><iframe id="youtube_video" width="600" height="340" frameborder="0" modestbranding="1" allowfullscreen></iframe></div>
 								<script>
 								var channelID = "UCC1luu48wngHte-glhyvMHQ";
 								$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
