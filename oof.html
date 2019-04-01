@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OOF BUTTON!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="webpage">
+    <meta property="og:site_name" content="Jack5079" />
+    <meta property="og:title" content="OOF BUTTON!">
+    <meta name="description" content="I really only made this to test Material Components, but whatever.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image"
+        content="https://cdn.glitch.com/a67b1424-82f0-40b4-a024-5324d1872f2e%2Fnoob_hd_png_by_onesxheroes-dbs3xf3%5B1%5D.png?1553995494895">
+    <link rel="shortcut icon"
+        href="https://cdn.glitch.com/a67b1424-82f0-40b4-a024-5324d1872f2e%2Fnoob_hd_png_by_onesxheroes-dbs3xf3%5B1%5D.png?1553995494895">
+    <style>
+        @import url("https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css");
+
+        /* Using a url */
+        body {
+            background-image: url("https://cdn.glitch.com/a67b1424-82f0-40b4-a024-5324d1872f2e%2Fnoob_hd_png_by_onesxheroes-dbs3xf3%5B1%5D.png?1553995494895");
+            background-size: cover;
+            color: white;
+        }
+    </style>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the webpage's javascript file -->
+    <script>
+        // Loading in JS and CSS
+        var oof = 0;
+        function Delete() {
+            localStorage.clear();
+            oof = 0;
+            document.title = "Oof counter: " + oof;
+            document.getElementById("count").innerHTML = "Count: " + oof;
+        }
+        var getScore = localStorage.getItem('oofScore');
+        if (getScore) { // If a save DOES exist
+            oof = parseInt(getScore);
+        } else { // User deleted save/does not have save.
+            localStorage.setItem('oofScore', oof); // Create new save
+        }
+        document.getElementById("count").innerHTML = "Count: " + oof;
+        document.title = "Oof counter: " + oof;
+        var script = document.createElement('script');
+        script.onload = function () {
+            mdc.ripple.MDCRipple.attachTo(document.querySelector('.material-icons'));
+            mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'));
+        };
+        script.src = "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js";
+        document.head.appendChild(script); //or something of the likes
+        function play() {
+            var audio = new Audio('https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3');
+            audio.play();
+            oof++;
+            localStorage.setItem('oofScore', oof);
+            document.title = "Oof counter: " + oof;
+            document.getElementById("count").innerHTML = "Count: " + oof;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="mdc-top-app-bar" style="position: fixed; top: 0; left: 0;">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a onclick="Delete()" class="material-icons mdc-top-app-bar__navigation-icon">delete_forever</a>
+                <span class="mdc-top-app-bar__title">OOF BUTTON!</span>
+                <span class="mdc-top-app-bar__title" id="count">Count: 0</span>
+            </section>
+        </div>
+    </header>
+    <br style="line-height: 5">
+    <div style="display:flex;justify-content:center;align-items:center;">
+        <button class="mdc-fab" aria-label="Oof!" onclick="play()">
+            <span class="mdc-fab__icon material-icons">add</span>
+        </button>
+    </div>
+</body>
+
+</html>
