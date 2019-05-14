@@ -5,203 +5,238 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Jack5079</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<meta name="description" content="Jack5079's Website"/>
-		<meta property="og:title" content="Jack5079" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://jack5079.github.io" />
-		<meta property="og:image" content="https://jack5079.github.io/images/icon.png" />
-		<meta property="og:description" content="Jack5079's Website" />
-		<meta name="theme-color" content="#121317">
-		<!--sse--> <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-			new Crate({
-				server: '205476218277986304',
-				channel: '205476218277986304',
-				shard: 'https://disweb.deploys.io'
-			})
-		</script><!--/sse-->
-		<style>
+
+<head>
+	<title>Jack5079</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<meta name="description" content="Jack5079's Website" />
+	<meta property="og:title" content="Jack5079" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://jack5079.github.io" />
+	<meta property="og:image" content="https://jack5079.github.io/images/icon.png" />
+	<meta property="og:description" content="Jack5079's Website" />
+	<meta name="theme-color" content="#121317">
+	<link rel="manifest" href="manifest.json">
+	</link>
+	<!--sse-->
+	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+		new Crate({
+			server: '205476218277986304',
+			channel: '205476218277986304',
+			shard: 'https://disweb.deploys.io'
+		})
+	</script>
+	<!--/sse-->
+	<style>
 		.video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
-}
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
 
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-</style>
-	</head>
-	<body class="is-preload">
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-smile-o"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Jack5079</h1>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#games">Games</a></li>
-								<li><a href="#video">Video</a></li>
-								<li><a href="#minecraft">Minecraft</a></li>
-								<li><a href="#dupes">Dupes</a></li>
-								<li><a href="#experiments">Experiments</a></li>
-							</ul>
-						</nav>
-					</header>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-							<article id="games">
-								<h1 class="major">Roblox</h1>
-								<h2 class="major">Testing Game</h2>
-								<a href="https://web.roblox.com/games/1688994674/Item-test" class="button primary">Play</a><br>
-								<h1 class="major">Browser</h1>
-								<h2 class="major">Doge Sim</h2>
-								<a href="doge-sim" class="button primary">Play</a><br>
-								<h2 class="major">Molly Sim</h2>
-								<a href="molly-sim" class="button primary">Play</a><br>
-								<h2 class="major">Meme Review</h2>
-								Get to 100 claps!<br>
-								<a href="meme-review" class="button primary">Play</a><br>
-								<h2 class="major">The TRUE Molly Sim</h2>
-								<a href="true-molly" class="button primary">Play</a>
-								<h2 class="major">oof button</h2>
-								I swear, I made it ironically.<br>
-								<a href="oof" class="button primary">Play</a>
-								<h2 class="major">Bruh Beagle</h2>
-								It works on mobile?!?!?!<br>
-								<a href="bruh-beagle" class="button primary">Play</a>
-							</article>
-
-						<!-- The video thing -->
-							<article id="video">
-								<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-								<div class="video-container"><iframe id="youtube_video" width="600" height="340" frameborder="0" modestbranding="1" allowfullscreen></iframe></div>
-								<script>
-								var channelID = "UCC1luu48wngHte-glhyvMHQ";
-								$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
- 								  var link = data.items[0].link;
-   								var id = link.substr(link.indexOf("=")+1);
-  								  $("#youtube_video").attr("src","https://www.youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
-								});
-								</script>
-							<a href="https://www.youtube.com/channel/UCC1luu48wngHte-glhyvMHQ?sub_confirmation=1" class="button primary">Subscribe</a>
-							</article>
-
-
-							<article id="minecraft">
-								<h1 class="major">Datapacks</h1>
-								<h2 class="major">Jack5079 Datapack</h2>
-								<h3>Command list:</h3>
-								<h4>/function jack5079:clearlag</h4>
-								Clears lag a bit.
-								<h4>/function jack5079:waterready</h4>
-								It gives you Dolphin's Grace, Water Breathing and it gives you diamond boots with depth strider III. It makes you go very fast.
-								<h4>/function jack5079:rankmapmaker</h4>
-								Gives you a cool looking <span style="color:#ff3232;">[MAPMAKER]</span> rank.
-								<h4>/function jack5079:superclear</h4>
-								Clears your effects and inventory.
-								<h4>/function jack5079:mapsetup</h4>
-								Turns off commandblockoutput, clears lag, gives you the mapmaker rank, and turns on keepinventory.
-								<h4>/function jack5079:getad</h4>
-								Gives you all the advancements.
-								<h4>/function jack5079:clearad</h4>
-								Removes all your advancements.
-								<h4>/function jack5079:killplay</h4>
-								Kills every player.
-								<br>
-								<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/jackpack" class="button primary">Download</a>
-								<br>
-								<h2 class="major">Lightning Snowballs</h2>
-								Just throw a snowball...<br>
-								<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/light" class="button primary">Download</a>
-								<h2 class="major">Instant TNT</h2>
-								TNT will explode the second you ignite it!<br>
-								<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/instanttnt" class="button primary">Download</a>
-								<h2 class="major">Missiles in Minecraft!</h2>
-								Once installed, use /function miss:ile<br>
-								<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/explode" class="button primary">Download</a>
-
-								<h1 class="major">Maps</h1>
-								<h2 class="major">Jack5079's redstone <br>testing world</h2>
-								<span class="image main"><img src="images/pic01.png" alt="" /></span>
-								Just a few redstone machines I made.
-								<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/world" class="button primary">Download</a>
-								<h1 class="major">Commands</h1>
-								<h2 class="major">OP Box</h2>
-								<div style="height:120px;width:100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-									/give @p minecraft:black_shulker_box{display:{Name:"{\"text\":\"The Black Box\",\"bold\":\"false\",\"italic\":\"false\",\"underlined\":\"false\",\"strikethrough\":\"false\",\"obfuscated\":\"false\"}",Lore:["OP stuff in here"]},BlockEntityTag:{Items:[{Slot:0b,id:"minecraft:diamond_sword",Count:1b,tag:{display:{Name:"{\"text\":\"OP SWORD\",\"bold\":\"true\",\"italic\":\"true\",\"underlined\":\"true\"}",Lore:["very cool"]},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:10000,Operation:2,UUIDLeast:969488,UUIDMost:626688,Slot:"mainhand"},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:10000,Operation:2,UUIDLeast:682984,UUIDMost:29747,Slot:"mainhand"}]}},{Slot:1b,id:"minecraft:elytra",Count:1b,tag:{display:{Name:"{\"text\":\"Unbreakable Elytra\"}",Lore:["fly fst"]},Unbreakable:1b}},{Slot:2b,id:"minecraft:diamond_pickaxe",Count:1b,tag:{display:{Name:"{\"text\":\"fst mining\"}",Lore:["very fst"]},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:32767}]}}]}} 1
-								</div>
-							</article>
-
-							<article id="dupes">
-								<h2 class="major">Click for explosion</h2>
-								This thing will explode when you click!
-								Requires More Entities.<br>
-								<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533071856" class="button primary">Subscribe</a>
-								<h2 class="major">Super Airboat</h2>
-								Get in the airboat and hold down left click. <br>Also if you spawn it on a building, and put it on the ground, it spins really fast when you click.
-								<br>
-								Requires Wiremod.<br>
-								<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533024457" class="button primary">Subscribe</a>
-								<h2 class="major">Water Ball</h2>
-								Spawn it on the ground, and put in the water, then it bounces!
-								<br>
-								Requires Wiremod.<br>
-								<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533100850" class="button primary">Subscribe</a>
-								<h2 class="major">Fast Box</h2>
-								Shoot a RPG at it, and it launches.<br>
-								<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533240951" class="button primary">Subscribe</a>
-							</article>
-
-
-							<article id="experiments">
-									<a href="rectangle" class="button primary">Rectangle</a>
-									<a href="face" class="button primary">Face</a>
-									<a href="logo" class="button primary">Logo</a>
-									<a href="boxes" class="button primary">Boxes</a>
-									<a href="stick" class="button primary">Stick</a>
-									<a href="intro" class="button primary">Intro</a>
-									<a href="ball" class="button primary">Ball</a>
-							</article>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Jack5079. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-smile-o"></span>
 			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Jack5079</h1>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#games">Games</a></li>
+					<li><a href="#video">Video</a></li>
+					<li><a href="#minecraft">Minecraft</a></li>
+					<li><a href="#dupes">Dupes</a></li>
+					<li><a href="#experiments">Experiments</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- BG -->
-			<div id="bg"></div>
+		<!-- Main -->
+		<div id="main">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+			<!-- Intro -->
+			<article id="games">
+				<h1 class="major">Roblox</h1>
+				<h2 class="major">Testing Game</h2>
+				<a href="https://web.roblox.com/games/1688994674/Item-test" class="button primary">Play</a><br>
+				<h1 class="major">Browser</h1>
+				<h2 class="major">Doge Sim</h2>
+				<a href="doge-sim" class="button primary">Play</a><br>
+				<h2 class="major">Molly Sim</h2>
+				<a href="molly-sim" class="button primary">Play</a><br>
+				<h2 class="major">Meme Review</h2>
+				Get to 100 claps!<br>
+				<a href="meme-review" class="button primary">Play</a><br>
+				<h2 class="major">The TRUE Molly Sim</h2>
+				<a href="true-molly" class="button primary">Play</a>
+				<h2 class="major">oof button</h2>
+				I swear, I made it ironically.<br>
+				<a href="oof" class="button primary">Play</a>
+				<h2 class="major">Bruh Beagle</h2>
+				It works on mobile?!?!?!<br>
+				<a href="bruh-beagle" class="button primary">Play</a>
+			</article>
+
+			<!-- The video thing -->
+			<article id="video">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+				<div class="video-container"><iframe id="youtube_video" width="600" height="340" frameborder="0"
+						modestbranding="1" allowfullscreen></iframe></div>
+				<script>
+					var channelID = "UCC1luu48wngHte-glhyvMHQ";
+					$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function (data) {
+						var link = data.items[0].link;
+						var id = link.substr(link.indexOf("=") + 1);
+						$("#youtube_video").attr("src", "https://www.youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
+					});
+				</script>
+				<a href="https://www.youtube.com/channel/UCC1luu48wngHte-glhyvMHQ?sub_confirmation=1"
+					class="button primary">Subscribe</a>
+			</article>
+
+
+			<article id="minecraft">
+				<h1 class="major">Datapacks</h1>
+				<h2 class="major">Jack5079 Datapack</h2>
+				<h3>Command list:</h3>
+				<h4>/function jack5079:clearlag</h4>
+				Clears lag a bit.
+				<h4>/function jack5079:waterready</h4>
+				It gives you Dolphin's Grace, Water Breathing and it gives you diamond boots with depth strider III. It
+				makes you go very fast.
+				<h4>/function jack5079:rankmapmaker</h4>
+				Gives you a cool looking <span style="color:#ff3232;">[MAPMAKER]</span> rank.
+				<h4>/function jack5079:superclear</h4>
+				Clears your effects and inventory.
+				<h4>/function jack5079:mapsetup</h4>
+				Turns off commandblockoutput, clears lag, gives you the mapmaker rank, and turns on keepinventory.
+				<h4>/function jack5079:getad</h4>
+				Gives you all the advancements.
+				<h4>/function jack5079:clearad</h4>
+				Removes all your advancements.
+				<h4>/function jack5079:killplay</h4>
+				Kills every player.
+				<br>
+				<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/jackpack"
+					class="button primary">Download</a>
+				<br>
+				<h2 class="major">Lightning Snowballs</h2>
+				Just throw a snowball...<br>
+				<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/light"
+					class="button primary">Download</a>
+				<h2 class="major">Instant TNT</h2>
+				TNT will explode the second you ignite it!<br>
+				<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/instanttnt"
+					class="button primary">Download</a>
+				<h2 class="major">Missiles in Minecraft!</h2>
+				Once installed, use /function miss:ile<br>
+				<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/explode"
+					class="button primary">Download</a>
+
+				<h1 class="major">Maps</h1>
+				<h2 class="major">Jack5079's redstone <br>testing world</h2>
+				<span class="image main"><img src="images/pic01.png" alt="" /></span>
+				Just a few redstone machines I made.
+				<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Jack5079/minecraft/tree/master/world"
+					class="button primary">Download</a>
+				<h1 class="major">Commands</h1>
+				<h2 class="major">OP Box</h2>
+				<div
+					style="height:120px;width:100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+					/give @p minecraft:black_shulker_box{display:{Name:"{\"text\":\"The Black
+					Box\",\"bold\":\"false\",\"italic\":\"false\",\"underlined\":\"false\",\"strikethrough\":\"false\",\"obfuscated\":\"false\"}",Lore:["OP
+					stuff in
+					here"]},BlockEntityTag:{Items:[{Slot:0b,id:"minecraft:diamond_sword",Count:1b,tag:{display:{Name:"{\"text\":\"OP
+					SWORD\",\"bold\":\"true\",\"italic\":\"true\",\"underlined\":\"true\"}",Lore:["very
+					cool"]},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:10000,Operation:2,UUIDLeast:969488,UUIDMost:626688,Slot:"mainhand"},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:10000,Operation:2,UUIDLeast:682984,UUIDMost:29747,Slot:"mainhand"}]}},{Slot:1b,id:"minecraft:elytra",Count:1b,tag:{display:{Name:"{\"text\":\"Unbreakable
+					Elytra\"}",Lore:["fly
+					fst"]},Unbreakable:1b}},{Slot:2b,id:"minecraft:diamond_pickaxe",Count:1b,tag:{display:{Name:"{\"text\":\"fst
+					mining\"}",Lore:["very
+					fst"]},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:32767}]}}]}} 1
+				</div>
+			</article>
+
+			<article id="dupes">
+				<h2 class="major">Click for explosion</h2>
+				This thing will explode when you click!
+				Requires More Entities.<br>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533071856"
+					class="button primary">Subscribe</a>
+				<h2 class="major">Super Airboat</h2>
+				Get in the airboat and hold down left click. <br>Also if you spawn it on a building, and put it on the
+				ground, it spins really fast when you click.
+				<br>
+				Requires Wiremod.<br>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533024457"
+					class="button primary">Subscribe</a>
+				<h2 class="major">Water Ball</h2>
+				Spawn it on the ground, and put in the water, then it bounces!
+				<br>
+				Requires Wiremod.<br>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533100850"
+					class="button primary">Subscribe</a>
+				<h2 class="major">Fast Box</h2>
+				Shoot a RPG at it, and it launches.<br>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1533240951"
+					class="button primary">Subscribe</a>
+			</article>
+
+
+			<article id="experiments">
+				<a href="rectangle" class="button primary">Rectangle</a>
+				<a href="face" class="button primary">Face</a>
+				<a href="logo" class="button primary">Logo</a>
+				<a href="boxes" class="button primary">Boxes</a>
+				<a href="stick" class="button primary">Stick</a>
+				<a href="intro" class="button primary">Intro</a>
+				<a href="ball" class="button primary">Ball</a>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Jack5079. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/boyofgreen/ManUp.js/manup.min.js"></script>
+</body>
+
 </html>
