@@ -2,10 +2,6 @@
 a {
     color: white;
 }
-
-tr {
-    border: none !important;
-}
 nav a {
     font-size: 1.4vw;
     text-decoration: none;
@@ -18,10 +14,7 @@ nav {
 nav a:hover {
     font-size: 1.5vw;
 }
-
-
 header {
-    vertical-align: center;
     position: sticky;
     background: rgba(69, 69, 69, 0.5);
 }
