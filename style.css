@@ -1,36 +1,13 @@
-body {
-    background: black;
-    color: white;
-    overflow-x: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-br.bs {
-    line-height: 5em;
-}
-
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
-
-.button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 2em;
-    font-size: 1vw;
-    text-transform: uppercase;
-    border-radius: 1em;
-    background: white;
-    color: black;
-    text-decoration: none;
-}
 
 a {
     color: white;
 }
 
+tr {
+    border: none !important;
+}
 nav a {
-    font-size: 3vw;
+    font-size: 1.4vw;
     text-decoration: none;
     transition: font-size 0.1s;
     padding-right: 1em;
@@ -39,21 +16,13 @@ nav {
     vertical-align: center;
 }
 nav a:hover {
-    font-size: 2.9vw;
+    font-size: 1.5vw;
 }
 
-th {
-    border-right: 0.1em #333333 solid;
-}
-th.big {
-    border-right: none;
-}
+
 header {
-    width: 100vw;
     vertical-align: center;
     position: sticky;
-    top: 0;
-    left: 0;
     background: rgba(69, 69, 69, 0.5);
 }
 
