@@ -1,0 +1,29 @@
+    body {
+      color: white;
+      background: black;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+
+    a {
+      color: black;
+      font-size: 5vw;
+      padding-left: 1em;
+      padding-right: 1em;
+      text-decoration: none;
+      border-radius: 1vw;
+      transition: font-size 1s;
+      background: white;
+    }
+
+    a:hover {
+      font-size: 6vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
