@@ -14,10 +14,6 @@ nav {
 nav a:hover {
     font-size: 1.5vw;
 }
-header {
-    position: sticky;
-    background: rgba(69, 69, 69, 0.5);
-}
 
 .logo {
     width: 5vw;
