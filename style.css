@@ -8,9 +8,7 @@ nav a {
     transition: font-size 0.1s;
     padding-right: 1em;
 }
-nav {
-    vertical-align: center;
-}
+
 nav a:hover {
     font-size: 1.5vw;
 }
