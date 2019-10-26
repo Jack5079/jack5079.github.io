@@ -27,35 +27,29 @@
         <!-- import the webpage's javascript file -->
         <script>
             /* global localStorage, mdc, Audio */
-            var oof = 0
-            function Delete () {
-              localStorage.clear()
-              oof = 0
-              document.title = 'Oof counter: ' + oof
-              document.getElementById('count').innerHTML = 'Count: ' + oof
-            }
-            var getScore = localStorage.getItem('oofScore')
-            if (getScore) { // If a save DOES exist
-              oof = parseInt(getScore)
-            } else { // User deleted save/does not have save.
-              localStorage.setItem('oofScore', oof) // Create new save
+            var oof = +localStorage.getItem('oofScore') || 0
+            function Delete() {
+                localStorage.clear()
+                oof = 0
+                document.title = 'Oof counter: ' + oof
+                document.getElementById('count').innerHTML = 'Count: ' + oof
             }
             document.getElementById('count').innerHTML = 'Count: ' + oof
             document.title = 'Oof counter: ' + oof
             var script = document.createElement('script')
             script.onload = function () {
-              mdc.ripple.MDCRipple.attachTo(document.querySelector('.material-icons'))
-              mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'))
+                mdc.ripple.MDCRipple.attachTo(document.querySelector('.material-icons'))
+                mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'))
             }
             script.src = 'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js'
             document.head.appendChild(script) // or something of the likes
-            function play () {
-              var audio = new Audio('https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3')
-              audio.play()
-              oof++
-              localStorage.setItem('oofScore', oof)
-              document.title = 'Oof counter: ' + oof
-              document.getElementById('count').innerHTML = 'Count: ' + oof
+            function play() {
+                var audio = new Audio('https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3')
+                audio.play()
+                oof++
+                localStorage.setItem('oofScore', oof)
+                document.title = 'Oof counter: ' + oof
+                document.getElementById('count').innerHTML = 'Count: ' + oof
             }
         </script>
     </head>
