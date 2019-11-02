@@ -36,7 +36,7 @@ h1, h2, h3, nav {
 
 body {
   text-align: left;
-  scrollbar-color: dark;
+  scrollbar-color: darkslategray lightslategray;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
