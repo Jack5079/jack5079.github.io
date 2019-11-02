@@ -42,10 +42,12 @@ body {
 
 @keyframes goaway {
   100% {
+    opacity: 0.5;
     top: -0.4em;
   }
   0% {
-    top: -5em;
+    opacity: 0;
+    top: -3em;
   }
 }
 
