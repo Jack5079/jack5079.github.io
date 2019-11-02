@@ -1,8 +1,25 @@
+@import url('https://rsms.me/inter/inter.css');
 .logo {
-  font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
-  animation: goaway 1s ease-out 1s 1 forwards;
-  animation-fill-mode: both;
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .logo {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+.logo {
   font-size: 5em;
+}
+
+.number {
+  opacity: 0.5;
+  animation: goaway ease-out 1s 1 forwards;
+  animation-fill-mode: both;
+  position: relative;
+  font-size: 0.7em;
+  font-family: monospace;
 }
 
 h1, h2, h3, nav {
@@ -25,10 +42,10 @@ body {
 
 @keyframes goaway {
   100% {
-    letter-spacing: -0.1em;
+    top: -0.4em;
   }
   0% {
-    letter-spacing: 0;
+    top: -5em;
   }
 }
 
