@@ -5,6 +5,7 @@ h1 {
   top: -30%;
   left: -10%;
   background: linear-gradient(to top right, yellow, #333);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;
