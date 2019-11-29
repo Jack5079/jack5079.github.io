@@ -15,7 +15,7 @@
 
 .number {
   opacity: 0.5;
-  animation: goaway ease-out 1s 1 forwards;
+  animation: goaway cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
   animation-fill-mode: both;
   position: relative;
   font-size: 0.7em;
@@ -42,7 +42,7 @@ body {
 @keyframes goaway {
   100% {
     opacity: 0.5;
-    top: -0.4em;
+    top: 0;
   }
   0% {
     opacity: 0;
