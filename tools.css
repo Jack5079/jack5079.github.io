@@ -1,0 +1,31 @@
+a {
+  text-align: right;
+  font-size: 1em;
+  text-decoration-line: none!important;
+  padding: .6em;
+  font-family: monospace;
+  border-right: .2vw solid #919191;
+  transition: border-radius 1s, background 1s
+}
+
+a:hover {
+  background: #2f4f4f;
+  border-radius: 1em
+}
+
+a:active {
+  background: #203636
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 100%
+}
+
+h2 {
+  text-align: center;
+  font-style: italic;
+}

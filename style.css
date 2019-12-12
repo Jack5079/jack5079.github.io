@@ -1,4 +1,28 @@
 @import url('https://rsms.me/inter/inter.css');
+html, body {
+  height: 100%;
+  background: black;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  color: white;
+}
+
+iframe {
+  position: absolute;
+}
+h2 {
+  font-size: 2em;
+}
+
 .logo {
   font-family: 'Inter', sans-serif;
 }
@@ -10,64 +34,37 @@
 }
 
 .logo {
+  text-align: center;
   font-size: 5em;
+  margin-left: 1em;
 }
 
 .number {
+  top: -3em;
   opacity: 0.5;
-  animation: goaway cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
+  animation: goaway 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s 1 forwards;
+  animation-fill-mode: both;
   position: relative;
-  font-size: 0.7em;
   font-family: monospace;
 }
 
-h1, h2, h3, nav {
-  text-align: center;
-}
-
-.col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  max-width: 100%;
-}
-
-body {
-  text-align: left;
-  scrollbar-color: darkslategray lightslategray;
-}
 
 @keyframes goaway {
   100% {
     opacity: 0.5;
-    top: 0;
+    top: -0em;
   }
   0% {
     opacity: 0;
-    top: -3em;
+    top: -1em;
   }
 }
 
+
 a {
-  text-align: right;
-  font-size: 1em;
-  text-decoration-line: none !important;
-  padding: 0.6em;
-  font-family: monospace;
-  border-right: 0.2vw solid #919191;
-  transition: border-radius 1s, background 1s;
-}
-
-a:hover {
-  background: darkslategray;
-  border-radius: 1em;
-}
-
-a:active {
-  background: rgb(32, 54, 54);
-}
-
-nav a {
-  font-size: 2em;
+  font-size: 5em;
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }

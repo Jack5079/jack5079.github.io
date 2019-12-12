@@ -1,0 +1,68 @@
+html, body {
+  background: black;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  margin: 0;
+  scrollbar-color: darkslategray black;
+  scrollbar-width: auto;
+}
+
+* {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-blend-mode: darken;
+  text-align: center;
+  float: left;
+  word-wrap: break-word;
+  scroll-snap-align: start;
+  color: white;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 1em;
+}
+
+#bruh-beagle-2 {
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/bark.webp) fixed;
+  background-size: cover;
+}
+
+#bruh-beagle {
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/beg.webp) fixed;
+  background-size: cover;
+}
+
+#bruh-button {
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-button/icon.png) fixed;
+  background-size: cover;
+}
+
+#oof-button {
+  background: rgba(0, 0, 0, .65) url(https://t5.rbxcdn.com/a99eb2dedec5f0bc8b0a57e1d1b78fbf);
+  background-size: cover;
+}
+
+#molly-sim {
+  background: rgba(0, 0, 0, .65) url(https://instagram.fbos1-1.fna.fbcdn.net/vp/579fe93befd7f701e4aafe26c1de72c6/5E522EF9/t51.2885-15/e35/22858014_1676829145709402_3294775008827539456_n.jpg?_nc_ht=instagram.fbos1-1.fna.fbcdn.net&_nc_cat=102);
+  background-size: cover;
+}
+
+#bruh-beagle-15 {
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/bagel.webp);
+  background-size: cover;
+}
+
+#doge-games {
+  background: rgba(0, 0, 0, .65) url(https://media1.tenor.com/images/9beb53322b9597484149fc93949e6460/tenor.gif?itemid=13766778);
+}
