@@ -33,13 +33,13 @@ a {
   border-radius: 1em;
 }
 
-#bruh-beagle-2 {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/bark.webp) fixed;
+#bark-beagle {
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/bark.webp) fixed;
   background-size: cover;
 }
 
 #bruh-beagle {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/beg.webp) fixed;
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/beg.webp) fixed;
   background-size: cover;
 }
 
@@ -59,7 +59,7 @@ a {
 }
 
 #bruh-beagle-15 {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-beagle-2/assets/bagel.webp);
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/bagel.webp);
   background-size: cover;
 }
 
