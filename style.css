@@ -1,20 +1,17 @@
 @import url('https://rsms.me/inter/inter.css');
-html,
-body {
-  height: 100%;
-  background: linear-gradient(to bottom right, #800000, black);
-}
-
-* {
-  margin: 0;
-}
-
-body {
-  margin: 0;
-}
-
 html {
+  height: 100%;
   color: white;
+  background: black;
+}
+
+body {
+  padding: 1em;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  background: linear-gradient(to top right, blue, black);
+  border-radius: 1em;
 }
 
 h2 {
@@ -32,8 +29,8 @@ h2 {
 }
 
 .logo {
-  text-align: center;
   font-size: 5em;
+  margin: 0;
   margin-left: 1em;
 }
 
@@ -57,8 +54,11 @@ h2 {
 }
 
 a {
-  font-size: 5em;
+  font-size: 2em;
   text-decoration: none;
-  display: block;
-  text-align: center;
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 1em;
+  background: black;
 }
