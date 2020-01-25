@@ -1,10 +1,8 @@
 html, body {
   background: black;
-  height: 100%;
-  scroll-snap-type: y mandatory;
+  width: max-content;
   margin: 0;
-  scrollbar-color: darkslategray black;
-  scrollbar-width: auto;
+  scroll-snap-type: x mandatory;
 }
 
 * {
@@ -13,14 +11,15 @@ html, body {
 }
 
 section {
-  width: 100%;
-  height: 100%;
+  width: max-content;
+  height: 100vh;
   background-blend-mode: darken;
   text-align: center;
   float: left;
   word-wrap: break-word;
   scroll-snap-align: start;
   color: white;
+  padding: 1em;
 }
 
 a {
@@ -34,17 +33,17 @@ a {
 }
 
 #bark-beagle {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/bark.webp) fixed;
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/bark.webp);
   background-size: cover;
 }
 
 #bruh-beagle {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/beg.webp) fixed;
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bark-beagle/assets/beg.webp);
   background-size: cover;
 }
 
 #bruh-button {
-  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-button/icon.png) fixed;
+  background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-button/icon.png);
   background-size: cover;
 }
 
