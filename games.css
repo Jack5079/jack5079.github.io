@@ -1,8 +1,9 @@
 html, body {
-  background: black;
+  background: linear-gradient(to right, blue, white);
   width: max-content;
   margin: 0;
   scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
 }
 
 * {
@@ -11,6 +12,7 @@ html, body {
 }
 
 section {
+  background-color: black;
   width: max-content;
   height: 100vh;
   background-blend-mode: darken;
@@ -44,11 +46,6 @@ a {
 
 #bruh-button {
   background: rgba(0, 0, 0, .65) url(https://jack5079.github.io/bruh-button/icon.png);
-  background-size: cover;
-}
-
-#oof-button {
-  background: rgba(0, 0, 0, .65) url(https://t5.rbxcdn.com/a99eb2dedec5f0bc8b0a57e1d1b78fbf);
   background-size: cover;
 }
 
