@@ -1,6 +1,7 @@
 html, body {
   background: linear-gradient(to right, blue, white);
   width: max-content;
+  overflow-y: hidden;
   margin: 0;
   scroll-snap-type: x mandatory;
   -ms-scroll-snap-type: x mandatory;
@@ -13,7 +14,6 @@ html, body {
 
 section {
   background-color: black;
-  width: max-content;
   height: 100vh;
   background-blend-mode: darken;
   text-align: center;
