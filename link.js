@@ -58,5 +58,5 @@ function onclick (e) {
 }
 
 document
-  .querySelectorAll('a')
+  .querySelectorAll('a:not([data-no-trans])')
   .forEach(e => e.addEventListener('click', onclick))

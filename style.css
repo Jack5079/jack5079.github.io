@@ -6,10 +6,10 @@ html {
 }
 
 body {
+  border: 4px blue solid;
   padding: 1em;
   max-width: 800px;
   margin: 20px auto;
-  text-align: center;
   background: linear-gradient(to top right, blue, black);
   border-radius: 1em;
 }
@@ -31,7 +31,10 @@ h2 {
 .logo {
   font-size: 5em;
   margin: 0;
-  margin-left: 1em;
+}
+
+header {
+  margin-left: 5em;
 }
 
 .number {
@@ -53,12 +56,31 @@ h2 {
   }
 }
 
+nav {
+  margin: 2em;
+}
+
 a {
   font-size: 2em;
   text-decoration: none;
   display: inline-block;
-  padding: 0.5em;
   border-radius: 1em;
+  padding: 0.5em;
   margin: 1em;
-  background: black;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  transition: background 1s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+a:active {
+  background: rgba(255, 255, 0, 0.6)
+}
+
+::selection {
+  background: white;
+  color: black;
 }
