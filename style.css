@@ -81,10 +81,6 @@ header a {
 }
 
 a:hover {
-  background: white;
-}
-
-header a:hover {
   background: black;
 }
 
