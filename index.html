@@ -9,29 +9,135 @@
     <link rel="stylesheet" href="style.css" />
 
     <link rel="shortcut icon" type="image/png" href="branding/logo7.png" />
-    <!-- if there's none, do link transitions -->
-    <script src="link.js" defer></script>
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
   </head>
 
   <body>
+    <video src="bg.mp4" autoplay loop playsinline muted></video>
     <header>
-      <h1 class="logo" style="font-weight: 900;letter-spacing: 0em;">
+      <h1 class="logo" style="font-weight: 900;letter-spacing: 0">
         jack<sup class="number" style="font-style: normal;">5079</sup>
       </h1>
-
-      <a data-no-trans href="https://twitter.com/Jack5o79" class="fa fa-twitter"> Follow</a>
-      <a data-no-trans href="https://www.youtube.com/channel/UC4nygVhROIVzaCEpI0J_M7g" class="fa fa-play"> Subscribe</a>
-
+      </a>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#tools">Tools</a>
+        <a href="#other">Other</a>
+      </nav>
     </header>
 
-    <nav>
-      <a href="games.html">🎮 Games</a>
-      <a href="tools.html">🔧 Tools</a>
-      <a href="other.html">🤔 Other</a>
-    </nav>
+    <br>
+    <main>
+      <a href="https://twitter.com/Jack5o79" class="fa fa-twitter"> Follow</a>
+      <a href="https://www.youtube.com/channel/UC4nygVhROIVzaCEpI0J_M7g" class="fa fa-play"> Subscribe</a>
+      <h2 id="games">Games</h2>
+      <article id="gamelist">
+        <section id="bark-beagle">
+          <h3>Bark Beagle</h3>
+          <p>the weirdest idle clicker ever made</p>
+          <a href="bark-beagle/">Play</a>
+        </section>
+        <section id="bruh-beagle">
+          <h3>Bruh Beagle</h3>
+          <p>Probably the only Wick Editor game that's:</p>
+          <ul>
+            <li>Made before 1.0</li>
+            <li>Has touch controls</li>
+            <li>Fills the entire screen</li>
+          </ul>
+          <a href="bruh-beagle.html">Play</a>
+        </section>
+        <section id="bruh-beagle-15">
+          <h3>Bruh Beagle 1.5</h3>
+          <p>A game made before Bark Beagle but after Bruh Beagle 1.</p>
+          <ul>
+            <li>Made before Wick Editor 1.0</li>
+            <li>Ported to 1.0</li>
+            <li>Had auto-bruhs for months upon months before Bark Beagle</li>
+          </ul>
+          <a href="Bruh-Beagle-1.5/">Play</a>
+        </section>
+        <section id="bruh-button">
+          <h3>Bruh Button</h3>
+          <p>A virtual bruh button. Why?</p>
+          <ol>
+            <li>I felt like it</li>
+            <li>I couldn't find an ad-free bruh button anywhere</li>
+          </ol>
+          <a href="bruh-button/">Play</a>
+        </section>
+        <section id="molly-sim">
+          <h3>Molly Sim</h3>
+          <p>funny dog fights bad dog</p>
+          <a href="molly-sim/">Play</a>
+        </section>
+
+        <section id="doge-games">
+          <h3>Doge Games</h3>
+          <p>games about doge</p>
+          <a href="doge-games/">Play</a>
+        </section>
+        <section id="h-the-game">
+          <h3>H: The Game</h3>
+          <p>Survive the G in this game about H!</p>
+          <a href="h-the-game/">Play</a>
+        </section>
+        <section id="oof-button">
+          <h3>Oof Button</h3>
+          <p>Made to test Material Components.</p>
+          <strong>⚠ This "game" is terrible! ⚠</strong>
+          <br />
+          <a href="oof.html">Play</a>
+        </section>
+      </article>
+      <h2 id="tools">Tools</h2>
+      <section>
+        <h3>Generators (Outputs a file)</h3>
+        <a href="mememakr/">mememakr</a>
+        <a href="wick-metadata/">Wick Metadata Viewer</a>
+        <a href="html-to-wick/">HTML to .wick</a>
+      </section>
+      <section>
+        <h3>Cheats for browser games</h3>
+        <a href="bruh-beagle-2-cheats/">Bruh Beagle 2 Cheats</a>
+        <a href="dogeminer-2-cheats/">Dogeminer 2 Cheats</a>
+      </section>
+
+      <section>
+        <h3>Copypastas (Outputs text)</h3>
+        <a href="https://swagcat.glitch.me/">Swagcat it!</a>
+      </section>
+
+      <section>
+        <h3>Dev Tools (Outputs code)</h3>
+        <a href="bruh-beagle-upgrade-maker/">Bruh Beagle 2 Upgrade Maker</a>
+      </section>
+      <h2 id="other">Other</h2>
+      <h3>wick editor tests</h3>
+      <div class="col">
+        <a href="random/face">Face</a>
+        <a href="random/logo.html">Logo</a>
+        <a href="random/boxes.html">Boxes</a>
+        <a href="random/stick.html">Stick</a>
+        <a href="random/intro.html">Intro</a>
+        <a href="random/ball.html">Ball</a>
+        <a href="random/rectangle.html">Rectangle</a>
+      </div>
+      <h3>humor</h3>
+      <div class="col">
+        <a href="post-this-dog/">POST THIS DOG</a>
+        <a href="flossing/">😂 I BE FLOSSING 😂</a>
+        <a href="https://jewel-bean.glitch.me/">Funny reCAPTCHA</a>
+      </div>
+
+      <h3>i have nowhere else to put this</h3>
+      <div class="col">
+        <a href="jackbot/">jack<sup class="number">bot</sup></a>
+      </div>
+    </main>
   </body>
 
 </html>
