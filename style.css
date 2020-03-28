@@ -1,9 +1,16 @@
 @import url('https://rsms.me/inter/inter.css');
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
 html {
   height: 100%;
   color: white;
   background: linear-gradient(to bottom, #7cb3d5, #053249) fixed;
   text-align: center;
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
   /* display: flex;
   justify-content: center;
@@ -43,14 +50,7 @@ h2 {
 }
 
 .logo {
-  font-family: 'Inter', sans-serif;
   font-size: 5vw;
-}
-
-@supports (font-variation-settings: normal) {
-  .logo {
-    font-family: 'Inter var', sans-serif;
-  }
 }
 
 .number {
