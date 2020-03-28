@@ -12,10 +12,6 @@ html {
   text-align: center;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; */
 }
 
 video {
