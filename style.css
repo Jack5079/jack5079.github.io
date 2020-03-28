@@ -7,7 +7,7 @@
 
 html {
   height: 100%;
-  color: white;
+  color: black;
   background: linear-gradient(to bottom, #7cb3d5, #053249) fixed;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -47,6 +47,7 @@ h2 {
 
 .logo {
   font-size: 5vw;
+  color: white;
 }
 
 .number {
@@ -68,31 +69,38 @@ h2 {
   }
 }
 
-header a {
-  font-size: 2em;
+a {
   text-decoration: none;
-  display: inline-block;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: 1em;
-  color: white;
-  background: rgba(0, 0, 0, 0.1);
-  transition: background 1s;
+  border-bottom: 0.1em solid black;
+  color: black;
 }
 
-a:hover {
-  background: black;
+header a {
+  font-size: 2em;
+  display: inline-block;
+  padding: 0.5em;
+  border-width: 0.5em;
+  margin: 1em;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  border-radius: 1em;
+  transition: top 0.5s, border-width 0.5s;
+}
+
+header a:hover {
+  top: 0.25em;
+  border-width: 0.25em;
+}
+
+header a:active {
+  top: 0.5em;
+  border-width: 0;
 }
 
 ::selection {
   background: white;
   color: black;
-}
-
-main a {
-  text-decoration: none;
-  border-bottom: 0.1em solid white;
-  color: white;
 }
 
 #gamelist {
@@ -101,14 +109,9 @@ main a {
 }
 
 #gamelist section {
-  word-break: break-all;
   /* display: inline-block; */
   background: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 1em;
-}
-
-#gamelist a:hover {
-  background: black;
 }
