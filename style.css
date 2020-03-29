@@ -17,8 +17,8 @@ html {
 video {
   position: fixed;
   z-index: -10;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   top: 0;
   left: 0;
 }
