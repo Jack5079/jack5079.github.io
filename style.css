@@ -56,23 +56,8 @@ header a:active {
   border-width: 0;
 }
 
-@media screen and (min-width: 751px) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header a {
-    display: inline-block;
-  }
-}
-
-h2 {
-  font-size: 2em;
-}
-
 .logo {
-  font-size: 5vw;
+  font-size: 10vw;
   color: white;
 }
 
@@ -82,6 +67,24 @@ h2 {
   animation-fill-mode: both;
   position: relative;
   font-family: monospace;
+}
+
+@media screen and (min-width: 751px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header a {
+    display: inline-block;
+  }
+  .logo {
+    font-size: 5vw;
+  }
+}
+
+h2 {
+  font-size: 2em;
 }
 
 @keyframes goaway {
