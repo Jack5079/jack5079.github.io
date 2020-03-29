@@ -106,12 +106,12 @@ a {
   color: black;
 }
 
-#gamelist {
+main {
   max-width: 500px;
   margin: 1em auto;
 }
 
-#gamelist section {
+main section {
   /* display: inline-block; */
   background: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
