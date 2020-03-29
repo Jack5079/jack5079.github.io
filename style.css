@@ -56,7 +56,7 @@ header a:active {
   border-width: 0;
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 751px) {
   header {
     display: flex;
     justify-content: center;
