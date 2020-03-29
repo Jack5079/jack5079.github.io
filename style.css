@@ -34,6 +34,7 @@ header {
 }
 
 header a {
+  background: #056e94;
   font-size: 2em;
   display: block;
   padding: 0.5em;
