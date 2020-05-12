@@ -23,38 +23,22 @@ video {
   left: 0;
 }
 
-header {
+nav {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   outline: 4px white solid;
   padding: 1em;
-  margin: 10vw;
   text-align: center;
   border-radius: 1em;
 }
 
-header a {
-  background: #056e94;
+nav a {
   font-size: 2em;
   display: block;
-  padding: 0.5em;
-  border-width: 0.5em;
+  text-decoration: underline;
+  border: none;
   margin: 1em;
-  position: relative;
-  background: rgba(0, 0, 0, 0.1);
-  top: 0;
-  border-radius: 1em;
   transition: top 0.5s, border-width 0.5s;
-}
-
-header a:hover {
-  top: 0.25em;
-  border-width: 0.25em;
-}
-
-header a:active {
-  top: 0.5em;
-  border-width: 0;
 }
 
 .logo {
@@ -70,17 +54,16 @@ header a:active {
   font-family: monospace;
 }
 
-@media screen and (min-width: 751px) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header a {
-    display: inline-block;
-  }
-  .logo {
-    font-size: 5vw;
+@media screen and (min-width: 1032px) {
+  nav {
+    width: 200px;
+    height: 100vh;
+    overflow: auto;
+    display: block;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
   }
 }
 
