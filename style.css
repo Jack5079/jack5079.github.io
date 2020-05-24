@@ -7,20 +7,11 @@
 
 html {
   height: 100%;
-  color: black;
-  background: linear-gradient(to bottom, #7cb3d5, #053249) fixed;
+  color: white;
+  background: linear-gradient(to bottom, rgb(151, 0, 0), black) fixed;
   text-align: center;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-}
-
-video {
-  position: fixed;
-  z-index: -10;
-  min-width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
 }
 
 nav {
@@ -84,8 +75,8 @@ h2 {
 
 a {
   text-decoration: none;
-  border-bottom: 0.1em solid black;
-  color: black;
+  border-bottom: 0.1em solid white;
+  color: white;
 }
 
 ::selection {
@@ -109,7 +100,7 @@ main section {
 ::-webkit-scrollbar {
   height: 12px;
   width: 5px;
-  background: linear-gradient(to top, #0c2837, #76a6cc);
+  background: linear-gradient(to top right, #0c2837, #76a6cc);
 }
 
 ::-webkit-scrollbar-thumb {
