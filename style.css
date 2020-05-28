@@ -52,7 +52,14 @@ nav {
   backdrop-filter: blur(50px);
   border-bottom: 4px white solid;
   padding: 1em;
-  text-align: center;
+    width: 100vw;
+    overflow: auto;
+    display: block;
+    position: sticky;
+    text-align: left;
+    margin: 0;
+    left: 0;
+    top: 0;
 }
 .scrollind {
   position: absolute;
@@ -76,25 +83,6 @@ nav a {
   text-decoration: underline;
   border: none;
   margin: 1em;
-}
-.logo {
-  display: block;
-}
-@media screen and (min-width: 1032px) {
-  nav {
-    width: 100vw;
-    overflow: auto;
-    display: block;
-    position: sticky;
-    text-align: left;
-    margin: 0;
-    left: 0;
-    top: 0;
-  }
-
-  .logo {
-    display: inline-block;
-  }
 }
 
 h2 {
