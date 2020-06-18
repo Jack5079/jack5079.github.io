@@ -7,11 +7,28 @@
 
 html {
   font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(to top right, red, blue);
+  animation: zoom 30s infinite;
+  background-size: 400%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@keyframes zoom {
+  from, to {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
 }
 
 body {
   background: black;
   padding: 1em;
+  border-radius: 1em;
+  max-width: 50%;
   color: white;
 }
 
