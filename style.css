@@ -54,7 +54,9 @@ nav {
   padding: 1em;
     width: 100vw;
     overflow: auto;
-    display: block;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     position: sticky;
     text-align: left;
     margin: 0;
