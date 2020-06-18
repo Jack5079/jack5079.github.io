@@ -7,7 +7,7 @@
 
 html {
   font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(to top right, red, blue);
+  background: linear-gradient(to top right, red, blue) fixed;
   animation: zoom 30s infinite;
   background-size: 400%;
   display:flex;
