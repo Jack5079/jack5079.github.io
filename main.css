@@ -4,7 +4,13 @@
     font-family: 'Inter var', sans-serif;
   }
 }
-
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
 html {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to top right, red, blue) fixed;
