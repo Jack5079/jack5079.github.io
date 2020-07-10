@@ -1,33 +1,21 @@
-h1 {
-  font-size: calc((40vw + 40vh) / 2);
-  text-align: left;
-  font-family: monospace;
-  text-shadow: white 0 0 20px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+html {
+  height: 100%;
+  font-size: 200%;
+  animation: gradient 20s alternate infinite;
 }
 
+header {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+h1 {
+  margin-right: 0.1em;
+}
 body {
-  overflow: hidden;
-  animation: gradient 7s alternate infinite;
-  height: 100vh;
   color: white;
   font-family: sans-serif;
-}
-
-p {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 1em;
-  vertical-align: bottom;
-  text-align: right;
-}
-
-a {
-  color: white;
+  text-align: center;
 }
 
 @keyframes gradient {
