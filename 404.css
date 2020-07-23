@@ -5,14 +5,19 @@ html {
 }
 
 header {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 h1 {
   margin-right: 0.1em;
 }
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: sans-serif;
   text-align: center;
