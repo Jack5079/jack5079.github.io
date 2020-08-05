@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jack5079
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://5079.ml
+  * I am jack5079 (https://keybase.io/jack5079) on keybase.
+  * I have a public key ASBqcIAqUnJywdtCr618jZHeXsAdqWl8gTz5uzXo1Owinwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206a70802a527272c1db42afad7c8d91de5ec01da9697c813cf9bb35e8d4ec229f0a",
+      "host": "keybase.io",
+      "kid": "01206a70802a527272c1db42afad7c8d91de5ec01da9697c813cf9bb35e8d4ec229f0a",
+      "uid": "824f89b2468d56e1b5ff4fe2c3e47819",
+      "username": "jack5079"
+    },
+    "merkle_root": {
+      "ctime": 1596648333,
+      "hash": "3f77c7da87a471731b81b9668e074861c0ccf051d9996665040f962a9474e19cb4a47b57c6caed741ec0f7916aebbe154b4ab49b401be245f0b18cce8d9d79e0",
+      "hash_meta": "b975ffde5dbc9c5a647581482c945539fc1dbfd63c820a1df7f9a15ec8ffc568",
+      "seqno": 17192957
+    },
+    "service": {
+      "entropy": "6FHoALDWjqt8wBcMUhWZDsBk",
+      "hostname": "5079.ml",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1596648394,
+  "expire_in": 504576000,
+  "prev": "6d09f7dabdaa27b7b1405bacf7cfa360133e4211b84ad3ec33d2162042fbea8c",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEganCAKlJycsHbQq+tfI2R3l7AHalpfIE8+bs16NTsIp8Kp3BheWxvYWTESpcCCcQgbQn32r2qJ7exQFus98+jYBM+QhG4StPsM9IWIEL76ozEIHN3FT31pFSPlsQrqtZnJLAyl6zw4AUd5qFEwjPs/lfwAgHCo3NpZ8RASEpCfT6B51RB1sUnNlxIWGfh8itYDtECeSN92EvHLVn2G9YbNmy0jTlnsvXXuO//z4pgZHtTmbjNZT8QLKnFAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEID5YCcly76W/7+yApwFj4vI7YNDA8M1/YeUaQLwDkBJfo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jack5079
+
+==================================================================
