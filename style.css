@@ -8,13 +8,12 @@
 body {
   margin: 0;
   overflow-x: hidden;
-
 }
+
 html {
   height: 100%;
   color: white;
-  background: linear-gradient(to bottom, rgb(151, 0, 0), black) fixed;
-  text-align: center;
+  background: black;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
@@ -22,18 +21,20 @@ html {
 header {
   margin: 0;
   height: 100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background: linear-gradient(118deg, #ff0000, #0000ff);
   background-size: 400% 400%;
   animation: scrollbg 30s ease infinite;
 }
 
 header h1 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: bold;
 }
+
 @keyframes scrollbg {
   0% {
     background-position: 0% 51%
@@ -46,43 +47,48 @@ header h1 {
   }
 }
 
-
 nav {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
+  background: rgb(85, 0, 0);
   border-bottom: 4px white solid;
   padding: 1em;
-    width: 100vw;
-    overflow: auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position: sticky;
-    text-align: left;
-    margin: 0;
-    left: 0;
-    top: 0;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  text-align: left;
+  margin: 0;
+  left: 0;
+  top: 0;
 }
+
 .scrollind {
   position: absolute;
   bottom: 1em;
   user-select: none;
   border: none;
   font-size: 2em;
+}
+
+#arr {
+  position: relative;
   animation: bounce 1s ease infinite;
 }
 
 @keyframes bounce {
   from, to {
-    bottom: 1em;
+    top: 0;
   }
   50% {
-    bottom: 2em
+    top: 1em
   }
 }
+
 nav a {
   font-size: 2em;
-  text-decoration: underline;
   border: none;
   margin: 1em;
 }
@@ -91,9 +97,11 @@ h2 {
   font-size: 2em;
 }
 
-a {
+header a {
   text-decoration: none;
-  border-bottom: 0.1em solid white;
+}
+
+a {
   color: white;
 }
 
@@ -102,15 +110,11 @@ a {
   color: black;
 }
 
-main {
-  max-width: 500px;
-  margin: 1em auto;
-}
-
-main section {
-  scroll-snap-align: center;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-  margin-bottom: 1em;
+article {
+  display: inline-block;
+  width: 500px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1em;
   padding: 1em;
 }
