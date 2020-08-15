@@ -52,11 +52,10 @@ nav {
   backdrop-filter: blur(50px);
   background: rgb(85, 0, 0);
   border-bottom: 4px white solid;
-  padding: 1em;
   width: 100vw;
   overflow: auto;
   display: flex;
-  justify-content: center;
+  padding-left: 1em;
   align-items: center;
   position: sticky;
   text-align: left;
@@ -88,7 +87,6 @@ nav {
 }
 
 nav a {
-  font-size: 2em;
   border: none;
   margin: 1em;
 }
@@ -117,4 +115,12 @@ article {
   background: rgba(255, 255, 255, 0.1);
   margin: 1em;
   padding: 1em;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: .5em;
+  column-gap: .5em
 }
