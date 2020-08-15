@@ -67,6 +67,7 @@ nav {
 nav a:not(.logolink) {
   margin: 1em;
 }
+
 h2 {
   font-size: 2em;
 }
@@ -91,6 +92,12 @@ article {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  article {
+    margin-bottom: 1em;
+  }
+}
+
 @media (min-width: 768px) {
   section {
     display: -ms-grid;
@@ -100,7 +107,7 @@ article {
     column-gap: .5em
   }
   article {
-    padding: 1em;
     width: unset;
+    padding: 1em;
   }
 }
