@@ -27,6 +27,9 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.png) fixed;
   /* background-size: 200%; */
   animation: scrollbg 20s linear infinite;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  box-shadow: 0.1em 0 10px;
 }
 
 header h1 {
