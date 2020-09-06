@@ -24,9 +24,9 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(118deg, #ff0000, #0000ff);
-  background-size: 400% 400%;
-  animation: scrollbg 30s ease infinite;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.png);
+  background-size: 200%;
+  animation: scrollbg 20s linear infinite;
 }
 
 header h1 {
@@ -36,13 +36,10 @@ header h1 {
 
 @keyframes scrollbg {
   0% {
-    background-position: 0% 51%
-  }
-  50% {
-    background-position: 100% 50%
+    background-position: 0% 0%
   }
   100% {
-    background-position: 0% 51%
+    background-position: 100% 100%
   }
 }
 
