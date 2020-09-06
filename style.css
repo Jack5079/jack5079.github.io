@@ -24,7 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.png);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.png) fixed;
   /* background-size: 200%; */
   animation: scrollbg 20s linear infinite;
 }
