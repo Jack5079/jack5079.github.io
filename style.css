@@ -43,28 +43,6 @@ header h1 {
   }
 }
 
-nav {
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
-  background: rgb(85, 0, 0);
-  border-bottom: 4px white solid;
-  border-right: 4px white solid;
-  border-bottom-right-radius: 1em;
-  overflow: auto;
-  display: flex;
-  position: fixed;
-  padding-left: 1em;
-  align-items: center;
-  text-align: left;
-  margin: 0;
-  top: 0;
-  left: 0;
-}
-
-nav a:not(.logolink) {
-  margin: 1em;
-}
-
 h2 {
   font-size: 2em;
 }
