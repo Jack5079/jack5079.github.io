@@ -8,12 +8,13 @@ async function patch(event) {
   if (fe.status === 404) {
     const text = await fe.text()
     if (text.includes('Page not found &middot; GitHub Pages') || text.startsWith('Cannot GET')) {
+      console.log('res')
       event.respondWith(fetch('/404.html'))
     } else {
-      return
+      return fe
     }
   } else {
-    return
+    return fe
   }
 }
 self.addEventListener('fetch', patch)
