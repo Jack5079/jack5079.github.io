@@ -15,24 +15,22 @@ html {
   background: black;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-}
-
-header {
   margin: 0;
   min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.png) fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.png) fixed;
   /* background-size: 200%; */
   animation: scrollbg 200000000s linear infinite;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  box-shadow: 0.1em 0 10px;
 }
 
-header h1 {
+.i {
+  filter: invert(100%);
+}
+
+h1 {
   font-size: 3em;
   font-weight: bold;
 }
@@ -61,31 +59,4 @@ a {
 ::selection {
   background: white;
   color: black;
-}
-
-article {
-  display: inline-block;
-  min-width: 100px;
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  article {
-    margin-bottom: 1em;
-  }
-}
-
-@media (min-width: 768px) {
-  section {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: .5em;
-    column-gap: .5em
-  }
-  article {
-    width: unset;
-    padding: 1em;
-  }
 }
