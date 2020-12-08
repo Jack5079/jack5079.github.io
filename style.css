@@ -12,7 +12,7 @@ button {
   transition: transform 0.1s;
 }
 button:active {
-  transform: translateY(5px)
+  transform: scale(0.9)
 }
 
 body {
