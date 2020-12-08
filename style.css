@@ -5,6 +5,16 @@
   }
 }
 
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  transition: transform 0.1s;
+}
+button:active {
+  transform: translateY(5px)
+}
+
 body {
   margin: 5em;
 }
