@@ -19,8 +19,6 @@ button:active {
 body {
   border-radius: 1em;
   background: #25242D;
-  width: 50%;
-  margin: 0;
 }
 
 main {
@@ -48,6 +46,7 @@ footer a {
   background: #42337A;
   color: white;
   padding: 0.5em;
+  margin-bottom: 1em;
   text-decoration: none;
   border-radius: 1em;
   display: inline-block;
@@ -71,16 +70,29 @@ strong {
   font-size: 1.4em;
 }
 
+@media (min-width: 1025px) and (min-height: 500px) {
+  body {
+    border-radius: 1em;
+    width: 50%;
+    margin: 0;
+  }
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  footer a {
+    margin-bottom: 0;
+  }
+}
+
 html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 100%;
+  text-align: center;
   color: white;
   background: black;
   font-family: 'Inter', sans-serif;
-  margin: 0;
 }
 
 header {
