@@ -36,10 +36,15 @@ footer {
 footer a img {
   margin-right: 1em;
 }
+footer a div {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 footer a {
   background: #42337A;
   color: white;
-  padding: 0.4em;
+  padding: 0.5em;
   text-decoration: none;
   border-radius: 1em;
   display: inline-block;
