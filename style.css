@@ -91,7 +91,10 @@ html {
   height: 100%;
   text-align: center;
   color: white;
-  background: black;
+  background: url(5079mlicon.svg) black;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
   font-family: 'Inter', sans-serif;
 }
 
