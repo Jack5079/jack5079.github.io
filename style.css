@@ -62,11 +62,8 @@ strong {
   background: yellow;
   color: black;
   text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: block;
+  border-radius: 1em;
   font-size: 1.4em;
 }
 
@@ -84,6 +81,13 @@ strong {
   }
   footer a {
     margin-bottom: 0;
+  }
+  strong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
   }
 }
 
