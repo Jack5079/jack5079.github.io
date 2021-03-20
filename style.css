@@ -104,6 +104,7 @@ header>section>.tag {
 }
 
 header>section {
+  box-shadow: 0 0 5px black;
   font-size: 14px;
   font-weight: 500;
   display: -webkit-box;
