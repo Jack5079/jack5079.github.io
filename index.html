@@ -65,7 +65,7 @@
             const strong = document.createElement('strong')
             strong.innerText = act.name
             document.querySelector('.tag .below').append(strong)
-            document.querySelector('.tag small').innerText = act.details
+            document.querySelector('.tag small').innerText = act.details || ''
           }
           const custom = data.activities.find(act => act.id === 'custom')
           if (custom && !act) {
