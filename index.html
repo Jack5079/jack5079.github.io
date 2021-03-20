@@ -12,7 +12,17 @@
 
   <body>
     <header>
-      <img width="100" src="5079mlicon.svg" alt="moller">
+      <section>
+        <img />
+        <section class="tag">
+          <strong class="name">Jack</strong>
+          <div class="below"><img src="https://cdn.discordapp.com/emojis/817185536661389322.png?v=1">trollsmile funni</div>
+          <small></small>
+        </section>
+        <section class="act" hidden>
+          <img class="big">
+        </section>
+      </section>
     </header>
     <main>
       <h1 style="text-decoration: underline;">
@@ -34,9 +44,30 @@
         </div>
       </a>
       <a rel="nofollow" href="donate.html">
-        <div><img src="https://unpkg.com/simple-icons@v3/icons/bitcoin.svg" width="20" class="i" alt="Donate">throw money into a pit</div>
+        <div><img src="https://unpkg.com/simple-icons@v3/icons/bitcoin.svg" width="20" class="i" alt="Donate">throw
+          money into a pit</div>
       </a>
     </footer>
+    <script>
+      fetch('https://api.lanyard.rest/v1/users/173589391560802306').then(res => res.json()).then(({ data }) => {
+        if (data) {
+          console.log(data)
+          document.querySelector('header > section > img').src = `https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}`;
+          const act = data.activities.find(act => act.type === 0)
+          if (act) {
+            console.log(act)
+            document.querySelector('.act').hidden = false
+            document.querySelector('.act .big').src = `https://cdn.discordapp.com/app-assets/${act.application_id}/${act.assets.large_image}.png`
+            document.querySelector('.act .big').title = act.assets.large_text
+            document.querySelector('.tag .below').innerHTML = document.querySelector('.tag .below').innerHTML.replace('trollsmile funni', 'Playing ')
+            const strong = document.createElement('strong')
+            strong.innerText = act.name
+            document.querySelector('.tag .below').append(strong)
+            document.querySelector('.tag small').innerText = act.details
+          }
+        }
+      })
+    </script>
   </body>
 
 </html>
