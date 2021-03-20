@@ -16,7 +16,8 @@
         <img />
         <section class="tag">
           <strong class="name">Jack</strong>
-          <div class="below"><img src="https://cdn.discordapp.com/emojis/817185536661389322.png?v=1">trollsmile funni</div>
+          <div class="below"><img src="https://cdn.discordapp.com/emojis/817185536661389322.png?v=1">trollsmile funni
+          </div>
           <small></small>
         </section>
         <section class="act" hidden>
@@ -64,6 +65,10 @@
             strong.innerText = act.name
             document.querySelector('.tag .below').append(strong)
             document.querySelector('.tag small').innerText = act.details
+          }
+          const custom = data.activities.find(act => act.id === 'custom')
+          if (custom && !act) {
+            document.querySelector('.tag .below').innerHTML = document.querySelector('.tag .below').innerHTML.replace('trollsmile funni', custom.state)
           }
         }
       })
