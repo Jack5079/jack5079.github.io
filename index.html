@@ -51,13 +51,13 @@
     </footer>
     <script>
       // @license magnet:?xt=urn:btih:b8999bbaf509c08d127678643c515b9ab0836bae&dn=ISC.txt ISC
-      fetch('https://api.lanyard.rest/v1/users/173589391560802306').then(res => res.json()).then(({ data }) => {
+      
+      fetch('https://api.lanyard.rest/v1/users/' + document.querySelector('a[href*=discord]').href.split('/').pop()).then(res => res.json()).then(({ data }) => {
         if (data) {
-          console.log(data)
+          document.querySelector('a[href*=discord]').innerHTML = document.querySelector('a[href*=discord]').innerHTML.replace('Jack#9701', `${data.discord_user.username}#${data.discord_user.discriminator}`)
           document.querySelector('header > section > img').src = `https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}`;
           const act = data.activities.find(act => act.type === 0)
           if (act) {
-            console.log(act)
             document.querySelector('.act').hidden = false
             document.querySelector('.act .big').src = `https://cdn.discordapp.com/app-assets/${act.application_id}/${act.assets.large_image}.png`
             document.querySelector('.act .big').title = act.assets.large_text
