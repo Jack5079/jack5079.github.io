@@ -5,6 +5,21 @@
   }
 }
 
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-rows: masonry;
+}
+article {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
+}
+.grid a {
+  color: white;
+  text-decoration: none;
+}
 button {
   background: transparent;
   border: 0;
@@ -13,46 +28,19 @@ button {
 }
 
 button:active {
-  transform: scale(0.95)
+  transform: scale(0.95);
 }
 
 body {
   margin: 0;
-  background: #25242D;
+  background: #25242d;
 }
 
 main {
   padding: 1em;
 }
 
-footer {
-  padding: 1em;
-  border-radius: 1em;
-  background: #1E1D27;
-  text-align: center;
-}
-
-footer a img {
-  margin-right: 1em;
-}
-
-footer a div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer a {
-  background: #42337A;
-  color: white;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  text-decoration: none;
-  border-radius: 1em;
-  display: inline-block;
-}
-
-header>section>img {
+header > section > img {
   border-radius: 50%;
   margin-right: 8px;
   width: 32px;
@@ -72,7 +60,7 @@ header>section>img {
   min-width: 0;
 }
 
-header>section>.tag {
+header > section > .tag {
   user-select: text;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -91,7 +79,7 @@ header>section>.tag {
 }
 
 .below img {
-  margin-right: .2em;
+  margin-right: 0.2em;
 }
 
 .act .big {
@@ -103,7 +91,7 @@ header>section>.tag {
   max-height: 100px;
 }
 
-header>section {
+header > section {
   box-shadow: 0 0 5px black;
   font-size: 14px;
   font-weight: 500;
@@ -116,7 +104,7 @@ header>section {
   padding: 10px;
   border-radius: 1em;
   text-align: left;
-  background: #292B2F;
+  background: #292b2f;
 }
 
 .tag .below {
@@ -125,7 +113,7 @@ header>section {
   overflow: hidden;
 }
 
-body>strong {
+body > strong {
   background: yellow;
   color: black;
   text-align: center;
@@ -147,10 +135,7 @@ body>strong {
     justify-content: center;
     align-items: center;
   }
-  footer a {
-    margin-bottom: 0;
-  }
-  body>strong {
+  body > strong {
     position: absolute;
     top: 0;
     left: 0;
@@ -178,7 +163,8 @@ header {
   border-bottom-left-radius: 1em;
   width: 100%;
   height: 200px;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bg.jpg) fixed;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 0;
@@ -188,7 +174,7 @@ header {
   filter: invert(100%);
 }
 
-h1 {
+main > h1 {
   font-size: 3em;
 }
 
