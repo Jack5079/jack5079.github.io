@@ -8,7 +8,7 @@
 .grid {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: masonry;
 }
 article {
@@ -125,15 +125,13 @@ body > strong {
 @media (min-width: 1025px) and (min-height: 500px) {
   body {
     border-radius: 1em;
-    width: 50%;
+    width: 70%;
     box-shadow: 0 0 5px black;
-    margin: 0;
+    margin: auto;
+    margin-top: 1em;
   }
   html {
-    display: flex;
-    background: linear-gradient(to top right, blue, red);
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(to top right, blue, red) fixed;
   }
   body > strong {
     position: absolute;
